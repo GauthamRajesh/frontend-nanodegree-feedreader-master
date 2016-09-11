@@ -34,7 +34,7 @@ $(function() {
         it('URL defined', function() {
             for(var i = 0; i < allFeeds.length; i++) {
                 expect(allFeeds[i].url).toBeDefined();
-                expect(allFeeds[i].url).toBe(0);
+                expect(allFeeds[i].url).not.toBe(0);
             }
         });
 
