@@ -70,7 +70,7 @@ $(function() {
              $(".menu-icon-link").click();
              expect(document.body.classList).toContain('menu-hidden'));
              $(".menu-icon-link").click();
-             expect($(document.body.className).not.toContain('menu-hidden'));
+             expect(document.body.classList).not.toContain('menu-hidden'));
           });
           
     });
