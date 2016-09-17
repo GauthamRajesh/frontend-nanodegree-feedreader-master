@@ -82,10 +82,10 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
-        beforeEach(function() {
+        beforeEach(function(done) {
           loadFeed(0, done);  
         });
-        it('At least one .entry element in the .feed container', function() {
+        it('At least one .entry element in the .feed container', function(done) {
            done(); 
         });
     });
