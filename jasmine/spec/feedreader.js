@@ -86,7 +86,7 @@ $(function() {
           loadFeed(0, done);  
         });
         it('At least one .entry element in the .feed container', function(done) {
-           expect($('.feed').length).not.toBe(0);
+           expect($('.entry').length).not.toBe(0);
            done(); 
         });
     });
@@ -108,7 +108,8 @@ $(function() {
           });
         });
         it('content changes', function(done) {
-           expect(feed2).not.toMatch(feed1); 
+           expect(feed2).not.toMatch(feed1);
+           done();
         });
     });
 }());
